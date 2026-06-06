@@ -1,213 +1,146 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Моє портфоліо</title>
-
-    <link rel="stylesheet" href="site.css?v=10">
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #e6e0d6;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background: #3b2a1a;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-
-        nav {
-            background: #5a3e2b;
-            padding: 10px;
-            text-align: center;
-        }
-
-        nav a {
-            color: white;
-            margin: 10px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .container {
-            display: flex;
-        }
-
-        .content {
-            flex: 3;
-            padding: 20px;
-        }
-
-        .sidebar {
-            flex: 1;
-            background: #3b2a1a;
-            color: white;
-            padding: 20px;
-        }
-
-        .card {
-            background: #eeeeee;
-            padding: 20px;
-            border-radius: 12px;
-            margin-bottom: 20px;
-        }
-
-        audio, video {
-            width: 100%;
-        }
-
-        footer {
-            background: #3b2a1a;
-            color: white;
-            text-align: center;
-            padding: 15px;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Ultimate Site</title>
+<link rel="stylesheet" href="site.css?v=2">
 </head>
 
 <body>
 
-<header>
-    <h1>Моє портфоліо</h1>
-    <p>Мій навчальний проєкт</p>
+
+
+<!-- 🌐 SITE -->
+<div id="siteContent" style="display:block;"></div>
+
+<header class="topbar">
+    <div class="logo">МОЄ ПОРТФОЛІО</div>
+
+    <nav class="menu">
+        <a href="#about">Про мене</a>
+        <a href="#works">Роботи</a>
+        <a href="#audio">Аудіо</a>
+        <a href="#video">Відео</a>
+        <a href="#contacts">Контакти</a>
+    </nav>
 </header>
 
-<nav>
+<div class="layout">
+
+<main class="content">
+
+<section id="about">
+    <h1>Про мене</h1>
+    <div class="box">Мене звати Тимофій. Я люблю програмування 💻</div>
+    <div class="box">Мені подобається створювати сайти та вчитися новому.</div>
+    <div class="box">Я також люблю ігри 🎮</div>
+</section>
+
+<section id="works">
+    <h1>Мої роботи (Projects)</h1>
+    <div class="buttons">
+        <a href="bloks.html">Блоки</a>
+        <a href="table.html">Таблиці</a>
+        <a href="lists.html">Списки</a>
+        <a href="links.html">Посилання</a>
+        <a href="symbols.html">Символи</a>
+        <a href="text2.html">Текст</a>
+        <a href="map.html">Мапа</a>
+    </div>
+</section>
+
+<section id="audio">
+    <h1>Музика 🎵</h1>
+<audio controls 
+src="sounds/bumboks-oy-u-luzi-chervona-kalina-(meloua.com).mp3">
+    Your browser does not support the audio element.
+</audio>
+</section>
+<section>
+    <h1>Відео 🎬</h1>
+    <iframe width="937" height="527" src="https://www.youtube.com/embed/ouXXAE73ASY?list=RDouXXAE73ASY" title="DZIDZIO - Гімн України (Official Audio)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</section>
+
+<section id="video">
+    
+  <section>
+    <h1>Океан</h1>
+    <video controls width="1000px" height="562px" src="videos/ocean.mp4">
+    </video>
+  </section>  
+
+<section>
+    <h1>Міні взаємодія 🎮</h1>
+    <button onclick="randomMsg()">Натисни</button>
+    <p id="msg"></p>
+</section>
+
+<!-- 💎 PREMIUM FORM -->
+<section id="contacts" class="card">
+    <h1>Зв’язатися зі мною 📩</h1>
+
+    <form id="contactForm">
+
+        <div class="inputBox">
+            <input type="text" id="name" required>
+            <label>Ваше ім’я</label>
+        </div>
+
+        <div class="inputBox">
+            <input type="email" id="email" required>
+            <label>Email</label>
+        </div>
+
+        <div class="inputBox">
+            <textarea id="message" required></textarea>
+            <label>Ваше повідомлення</label>
+        </div>
+
+        <button type="submit">Надіслати 🚀</button>
+
+    </form>
+    <p style="font-size:12px; opacity:0.6;">
+    Created using HTML, CSS, JavaScript
+</p>
+
+    <p id="formMsg"></p>
+</section>
+
+</main>
+
+<aside class="sidebar">
+    <h3>Навігація</h3>
     <a href="#about">Про мене</a>
-    <a href="#projects">Роботи</a>
-    <a href="#music">Аудіо</a>
+    <a href="#works">Роботи</a>
+    <a href="#audio">Аудіо</a>
     <a href="#video">Відео</a>
-</nav>
-
-<div class="container">
-
-    <div class="content">
-
-        <!-- ABOUT -->
-        <section id="about">
-            <h2>Про мене</h2>
-
-            <div class="card">
-                <p>Мене звати Тимофій. Я люблю програмування 💻</p>
-                <p>Мені подобається створювати сайти та вчитися новому.</p>
-                <p>Я також люблю ігри 🎮</p>
-            </div>
-        </section>
-
-        <!-- PROJECTS -->
-        <section id="projects">
-            <h2>Мої роботи</h2>
-
-            <div class="card">
-                <h3>Блоки</h3>
-                <p>Приклад роботи з блоками HTML.</p>
-            </div>
-
-            <div class="card">
-                <h3>Таблиці</h3>
-                <p>Приклад створення таблиць.</p>
-            </div>
-
-            <div class="card">
-                <h3>Списки</h3>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                </ul>
-            </div>
-
-            <div class="card">
-                <h3>Посилання</h3>
-                <a href="https://www.wikipedia.org">Wikipedia</a>
-            </div>
-        </section>
-
-        <!-- MUSIC -->
-        <section id="music">
-            <h2>Музика</h2>
-
-            <div class="card">
-                <p><i>Ой у лузі червона калина</i></p>
-
-                <audio controls 
-                src="https://mp3.com.ua/1119-bumboks-oy-u-luzi-chervona-kalina.html">
-                </audio>
-            </div>
-        </section>
-
-        <section>
-            <iframe width="937" height="527" src="https://www.youtube.com/embed/ouXXAE73ASY?list=RDouXXAE73ASY" title="DZIDZIO - Гімн України (Official Audio)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </section>
-
-        <!-- VIDEO -->
-        <section id="video">
-            <h2>Відео</h2>
-
-            <div class="card">
-                <video controls>
-                    <source src="https://www.youtube.com/watch?v=ouXXAE73ASY&list=RDouXXAE73ASY&start_radio=1">
-                </video>
-            </div>
-        </section>
-
-        <!-- EXTRA CONTENT -->
-        <section>
-            <h2>Що таке HTML?</h2>
-
-            <div class="card">
-                <p>
-                    HTML (HyperText Markup Language) — це стандартна мова для створення веб-сторінок.
-                </p>
-
-                <p>
-                    Вона використовує елементи: заголовки, абзаци, посилання, зображення.
-                </p>
-
-                <a href="https://uk.wikipedia.org/wiki/HTML">Читати більше</a>
-            </div>
-        </section>
-
-        <!-- MORE SECTIONS (for length) -->
-        <section>
-            <h2>Навички</h2>
-            <div class="card">
-                <p>HTML ⭐⭐⭐⭐</p>
-                <p>CSS ⭐⭐⭐</p>
-                <p>JavaScript ⭐⭐</p>
-            </div>
-        </section>
-
-        <section>
-            <h2>Контакти</h2>
-            <div class="card">
-                <p>Email: example@gmail.com</p>
-                <p>Телефон: +380000000000</p>
-            </div>
-        </section>
-
-    </div>
-
-    <!-- SIDEBAR -->
-    <div class="sidebar">
-        <h3>Навігація</h3>
-
-        <p><a href="#about">Про мене</a></p>
-        <p><a href="#projects">Роботи</a></p>
-        <p><a href="#music">Аудіо</a></p>
-        <p><a href="#video">Відео</a></p>
-    </div>
+    <a href="#contacts">Контакти</a>
+</aside>
+<section>
 
 </div>
+</div>
+<p id="status">System: Initializing...</p>
+<button id="reactionBtn">Start</button>
+<p id="reactionResult"></p>
+<div id="htmlInfo">
+    <h1>What is HTML?</h1>
 
-<footer>
-    <p>© 2026 Моє портфоліо</p>
-</footer>
+    <p>
+        HTML (HyperText Markup Language) is the standard language used to create web pages.
+        It structures content using elements like headings, paragraphs, links, images, and more.
+    </p>
 
+    <p>
+        HTML works together with CSS and JavaScript to build modern websites.
+    </p>
+
+    <a href="https://en.wikipedia.org/wiki/HTML" target="_blank">
+        Read more on Wikipedia
+    </a>
+</div>
+
+<script src="script.js?v=2"></script>
 </body>
 </html>
