@@ -47,6 +47,7 @@ h1 {
     width: 100%;
     display: block;
 }
-body {
-    background: red !important;
+
+h1{
+    text-align: upper-center
 }
