@@ -1,138 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Ultimate Site</title>
-<link rel="stylesheet" href="site.css?v=2">
+    <meta charset="UTF-8">
+    <title>Моє портфоліо</title>
+    <link rel="stylesheet" href="site.css?v=2">
 </head>
-
 <body>
 
+<h1>Моє портфоліо</h1>
 
+<!-- ABOUT -->
+<h2>Про мене</h2>
+<p>Мене звати Тимофій. Я люблю програмування 💻</p>
 
-<!-- 🌐 SITE -->
-<div id="siteContent" style="display:block;"></div>
+<!-- MUSIC -->
+<h2 class="section-title">Музика</h2>
 
-<header class="topbar">
-    <div class="logo">МОЄ ПОРТФОЛІО</div>
+<div class="music-card">
+    <p class="music-title">Ой у лузі червона калина</p>
 
-    <nav class="menu">
-        <a href="#about">Про мене</a>
-        <a href="#works">Роботи</a>
-        <a href="#audio">Аудіо</a>
-        <a href="#video">Відео</a>
-        <a href="#contacts">Контакти</a>
-    </nav>
-</header>
-
-<div class="layout">
-
-<main class="content">
-
-<section id="about">
-    <h1>Про мене</h1>
-    <div class="box">Мене звати Тимофій. Я люблю програмування 💻</div>
-    <div class="box">Мені подобається створювати сайти та вчитися новому.</div>
-    <div class="box">Я також люблю ігри 🎮</div>
-</section>
-
-<section id="works">
-    <h1>Мої роботи (Projects)</h1>
-    <div class="buttons">
-        <a href="bloks.html">Блоки</a>
-        <a href="table.html">Таблиці</a>
-        <a href="lists.html">Списки</a>
-        <a href="links.html">Посилання</a>
-        <a href="symbols.html">Символи</a>
-        <a href="text2.html">Текст</a>
-        <a href="map.html">Мапа</a>
-    </div>
-</section>
-
-<section id="audio">
-    <h1>Аудіо</h1>
     <audio controls 
-src="https://zemlyanayaalenasergeevna-ai.github.io/my-site/song.mp3">
-</audio>
-</section>
-
-<section id="video">
-    <h1>Відео</h1>
-    <video controls width="100%" src="sounds/DZIDZIO - Гмн Украни (mp3dim.com).mp3"></video>
-</section>
-
-<section>
-    <h1>Міні взаємодія 🎮</h1>
-    <button onclick="randomMsg()">Натисни</button>
-    <p id="msg"></p>
-</section>
-
-<!-- 💎 PREMIUM FORM -->
-<section id="contacts" class="card">
-    <h1>Зв’язатися зі мною 📩</h1>
-
-    <form id="contactForm">
-
-        <div class="inputBox">
-            <input type="text" id="name" required>
-            <label>Ваше ім’я</label>
-        </div>
-
-        <div class="inputBox">
-            <input type="email" id="email" required>
-            <label>Email</label>
-        </div>
-
-        <div class="inputBox">
-            <textarea id="message" required></textarea>
-            <label>Ваше повідомлення</label>
-        </div>
-
-        <button type="submit">Надіслати 🚀</button>
-
-    </form>
-    <p style="font-size:12px; opacity:0.6;">
-    Created using HTML, CSS, JavaScript
-</p>
-
-    <p id="formMsg"></p>
-</section>
-
-</main>
-
-<aside class="sidebar">
-    <h3>Навігація</h3>
-    <a href="#about">Про мене</a>
-    <a href="#works">Роботи</a>
-    <a href="#audio">Аудіо</a>
-    <a href="#video">Відео</a>
-    <a href="#contacts">Контакти</a>
-</aside>
-<section>
-
-</div>
-</div>
-<p id="status">System: Initializing...</p>
-<button id="reactionBtn">Start</button>
-<p id="reactionResult"></p>
-<div id="htmlInfo">
-    <h1>What is HTML?</h1>
-
-    <p>
-        HTML (HyperText Markup Language) is the standard language used to create web pages.
-        It structures content using elements like headings, paragraphs, links, images, and more.
-    </p>
-
-    <p>
-        HTML works together with CSS and JavaScript to build modern websites.
-    </p>
-
-    <a href="https://en.wikipedia.org/wiki/HTML" target="_blank">
-        Read more on Wikipedia
-    </a>
+    src="https://zemlyanayaalenasergeevna-ai.github.io/my-site/song.mp3">
+    </audio>
 </div>
 
-<script src="script.js?v=2"></script>
+<!-- VIDEO -->
+<h2 class="section-title">Відео</h2>
+
+<div class="video-card">
+    <video controls>
+        <source src="https://zemlyanayaalenasergeevna-ai.github.io/my-site/ocean.mp4">
+    </video>
+</div>
+
 </body>
 </html>
