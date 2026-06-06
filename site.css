@@ -1,8 +1,9 @@
 body {
     font-family: Arial, sans-serif;
-    background: #e6e0d6;
+    background: #e6e0d6; /* light beige like your goal */
     margin: 0;
     padding: 20px;
+    color: #000; /* FIX TEXT VISIBILITY */
 }
 
 /* Titles */
