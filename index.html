@@ -4,37 +4,206 @@
     <meta charset="UTF-8">
     <title>Моє портфоліо</title>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="site.css?v=5">
+    <link rel="stylesheet" href="site.css?v=10">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #e6e0d6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #3b2a1a;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background: #5a3e2b;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .content {
+            flex: 3;
+            padding: 20px;
+        }
+
+        .sidebar {
+            flex: 1;
+            background: #3b2a1a;
+            color: white;
+            padding: 20px;
+        }
+
+        .card {
+            background: #eeeeee;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
+
+        audio, video {
+            width: 100%;
+        }
+
+        footer {
+            background: #3b2a1a;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
 </head>
 
 <body>
 
+<header>
     <h1>Моє портфоліо</h1>
+    <p>Мій навчальний проєкт</p>
+</header>
 
-    <!-- ABOUT -->
-    <h2>Про мене</h2>
-    <p>Мене звати Тимофій. Я люблю програмування 💻</p>
+<nav>
+    <a href="#about">Про мене</a>
+    <a href="#projects">Роботи</a>
+    <a href="#music">Аудіо</a>
+    <a href="#video">Відео</a>
+</nav>
 
-    <!-- MUSIC -->
-    <h2 class="section-title">Музика</h2>
+<div class="container">
 
-    <div class="music-card">
-        <p class="music-title">Ой у лузі червона калина</p>
+    <div class="content">
 
-        <audio controls 
-        src="https://zemlyanayaalenasergeevna-ai.github.io/my-site/song.mp3">
-        </audio>
+        <!-- ABOUT -->
+        <section id="about">
+            <h2>Про мене</h2>
+
+            <div class="card">
+                <p>Мене звати Тимофій. Я люблю програмування 💻</p>
+                <p>Мені подобається створювати сайти та вчитися новому.</p>
+                <p>Я також люблю ігри 🎮</p>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects">
+            <h2>Мої роботи</h2>
+
+            <div class="card">
+                <h3>Блоки</h3>
+                <p>Приклад роботи з блоками HTML.</p>
+            </div>
+
+            <div class="card">
+                <h3>Таблиці</h3>
+                <p>Приклад створення таблиць.</p>
+            </div>
+
+            <div class="card">
+                <h3>Списки</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Посилання</h3>
+                <a href="https://www.wikipedia.org">Wikipedia</a>
+            </div>
+        </section>
+
+        <!-- MUSIC -->
+        <section id="music">
+            <h2>Музика</h2>
+
+            <div class="card">
+                <p><i>Ой у лузі червона калина</i></p>
+
+                <audio controls 
+                src="https://zemlyanayaalenasergeevna-ai.github.io/my-site/song.mp3">
+                </audio>
+            </div>
+        </section>
+
+        <!-- VIDEO -->
+        <section id="video">
+            <h2>Відео</h2>
+
+            <div class="card">
+                <video controls>
+                    <source src="https://zemlyanayaalenasergeevna-ai.github.io/my-site/ocean.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+
+        <!-- EXTRA CONTENT -->
+        <section>
+            <h2>Що таке HTML?</h2>
+
+            <div class="card">
+                <p>
+                    HTML (HyperText Markup Language) — це стандартна мова для створення веб-сторінок.
+                </p>
+
+                <p>
+                    Вона використовує елементи: заголовки, абзаци, посилання, зображення.
+                </p>
+
+                <a href="https://uk.wikipedia.org/wiki/HTML">Читати більше</a>
+            </div>
+        </section>
+
+        <!-- MORE SECTIONS (for length) -->
+        <section>
+            <h2>Навички</h2>
+            <div class="card">
+                <p>HTML ⭐⭐⭐⭐</p>
+                <p>CSS ⭐⭐⭐</p>
+                <p>JavaScript ⭐⭐</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Контакти</h2>
+            <div class="card">
+                <p>Email: example@gmail.com</p>
+                <p>Телефон: +380000000000</p>
+            </div>
+        </section>
+
     </div>
 
-    <!-- VIDEO -->
-    <h2 class="section-title">Відео</h2>
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+        <h3>Навігація</h3>
 
-    <div class="video-card">
-        <video controls>
-            <source src="https://zemlyanayaalenasergeevna-ai.github.io/my-site/ocean.mp4" type="video/mp4">
-        </video>
+        <p><a href="#about">Про мене</a></p>
+        <p><a href="#projects">Роботи</a></p>
+        <p><a href="#music">Аудіо</a></p>
+        <p><a href="#video">Відео</a></p>
     </div>
+
+</div>
+
+<footer>
+    <p>© 2026 Моє портфоліо</p>
+</footer>
 
 </body>
 </html>
