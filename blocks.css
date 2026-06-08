@@ -1,0 +1,130 @@
+body{
+    background-color: lightcoral;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+p{
+    font-size: 24px;
+    color: white;
+    font-family: "Comforter", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+span{
+    font-size: 24px;
+    color: white;
+    font-family: "Comforter", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+span{
+    color: blue;
+}
+span{
+    border: dotted 5px blue;
+    display: inline-block;
+}
+li{
+    background-color: lightblue;
+    display: inline-block;
+    padding: 5px 10px;
+    border:dashed 5px blue solid;
+}
+li{
+    margin: 10px;
+    border-style: dashed double dotted solid;
+    border-color: blue midnightblue;
+}
+li{
+    border-width: 5px;
+    border-radius: 10%;
+    font-size: 24px;
+    align-items: center;
+    justify-content: center;
+}
+li:hover{
+    background-color: blue;
+    color: white;
+    border-color: white;
+}
+#d1{
+    background-color: lightblue;
+    display: inline-block;
+    padding: 5px 10px;
+    border:dashed 5px blue solid;
+    font-size: 24px;
+    border-width: 5px;
+    border-color: blue midnightblue;
+    border-style: double;
+    align-items: center;
+    justify-content: center;
+    border-style: double dotted dashed solid;
+    margin: 10px;
+    border-radius: 10%;
+}
+#d2{
+    background-color: lightblue;
+    display: inline-block;
+    padding: 5px 10px;
+    border:dashed 5px blue solid;
+    font-size: 24px;
+    border-width: 5px;
+    border-color: blue midnightblue;
+    border-style: double;
+    align-items: center;
+    justify-content: center;
+    border-style: double dotted dashed solid;
+    margin: 10px;
+    border-radius: 10%;
+}
+#d3{
+    background-color: lightblue;
+    display: inline-block;
+    padding: 5px 10px;
+    border:dashed 5px blue solid;
+    font-size: 24px;
+    border-width: 5px;
+    border-color: blue midnightblue;
+    border-style: double;
+    align-items: center;
+    justify-content: center;
+    border-style: double dotted dashed solid;
+    margin: 10px;
+    border-radius: 10%;
+}
+#d4{
+    background-color: lightblue;
+    display: inline-block;
+    padding: 5px 10px;
+    border:dashed 5px blue solid;
+    font-size: 24px;
+    border-width: 5px;
+    border-color: blue midnightblue;
+    border-style: double;
+    align-items: center;
+    justify-content: center;
+    border-style: double dotted dashed solid;
+    margin: 10px;
+    border-radius: 10%;
+}
+#d1:hover{
+    background-color: blue;
+    color: white;
+    border-color: white;
+}
+#d2:hover{
+    background-color: blue;
+    color: white;
+    border-color: white;
+}
+#d3:hover{
+    background-color: blue;
+    color: white;
+    border-color: white;
+}
+#d4:hover{
+    background-color: blue;
+    color: white;
+    border-color: white;
+}

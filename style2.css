@@ -1,0 +1,157 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: sans-serif;
+}
+
+/* BOOT */
+#bootScreen {
+    position: fixed;
+    inset: 0;
+    background: black;
+    color: #00ff88;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 9999;
+}
+
+#loadingBar {
+    width: 0%;
+    height: 5px;
+    background: #00ff88;
+}
+
+/* STARTUP */
+#startupScreen {
+    position: fixed;
+    inset: 0;
+    background: black;
+    display: none;
+    z-index: 9998;
+}
+
+#startupScreen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* LOGIN */
+#loginScreen {
+    display: none;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+/* DESKTOP */
+#desktop {
+    display: none;
+    height: 100vh;
+    background: #0f172a;
+    color: white;
+    padding: 20px;
+}
+
+.desktop-icon {
+    margin: 15px;
+    cursor: pointer;
+}
+
+/* WINDOW */
+#appWindow {
+    display: none;
+    position: fixed;
+    inset: 0;
+}
+
+#window {
+    width: 600px;
+    background: #111;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#windowHeader {
+    background: #222;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    cursor: move;
+}
+
+/* TASKBAR */
+#taskbar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background: #c0c0c0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#startBtn {
+    padding: 5px;
+    border: 2px solid;
+    border-color: white gray gray white;
+    cursor: pointer;
+}
+
+.task-btn {
+    border: 2px solid;
+    border-color: white gray gray white;
+}
+
+#clock {
+    border: 2px solid;
+    border-color: gray white white gray;
+}
+
+/* START MENU */
+#startMenu {
+    position: fixed;
+    bottom: 40px;
+    left: 0;
+    display: none;
+    flex-direction: column;
+    width: 180px;
+    background: #c0c0c0;
+    border: 2px solid;
+    border-color: white gray gray white;
+}
+
+#startMenu div {
+    padding: 8px;
+    cursor: pointer;
+}
+
+#startMenu div:hover {
+    background: #000080;
+    color: white;
+}
+
+/* BSOD */
+#bsod {
+    position: fixed;
+    inset: 0;
+    background: #0078d7;
+    color: white;
+    display: none;
+    z-index: 99999;
+    padding: 50px;
+}
+
+/* CONSOLE */
+textarea {
+    width: 400px;
+    height: 150px;
+    background: black;
+    color: #00ff88;
+}

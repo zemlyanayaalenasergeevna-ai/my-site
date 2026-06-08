@@ -1,0 +1,47 @@
+body{
+    background-color: lightskyblue;
+}
+p{
+    font-size: 25px;
+}
+.p1{
+    color: khaki;
+    background-color: darkorange;
+}
+.p2{
+    font-family: "Georgia", "serif";
+}
+.p3{
+    font-family: "verdana", "helvetica", "arial", sans-serif;
+}
+.p4{
+    font-family: "cursive";
+}
+.p5{
+    font-family: "monospace";
+}
+.p6{
+    font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.p7{
+ font-family: "Rubik Microbe", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+.p8{
+    font-family: "Pattaya", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.p9{
+     font-family: "Rubik Glitch", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+.p10{
+    font-family: "Rubik Beastly", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}

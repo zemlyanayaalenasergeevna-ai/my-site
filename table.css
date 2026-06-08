@@ -1,0 +1,17 @@
+body{
+    background-color: lightsalmon;
+}
+p{
+    font-size: 50px;
+    color: yellow;
+}
+table{
+    border: double 5px forestgreen;
+    width: 50%;
+    font-size: 24px;
+}
+th{
+    border: solid darkgreen 2px;
+    width: 25%;
+    height: 1cm;
+}

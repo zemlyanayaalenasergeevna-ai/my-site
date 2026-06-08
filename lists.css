@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter&family=Pacifico&family=Rubik+Bubbles&family=Rubik+Burned&family=Rubik+Distressed&display=swap');
+body{
+    background-color: blueviolet;
+}
+p{
+    font-family: 'Comforter', cursive;
+    font-size: 30px;
+    color: white;
+}
+.p1{
+    font-family: 'Pacifico', cursive;
+    font-size: 30px;
+    color: white;
+}
+.p2{
+    font-family: 'Rubik Bubbles', cursive;
+    font-size: 30px;
+    color: white;
+}
+.p3{
+    font-family: 'Rubik Burned', cursive;
+    font-size: 30px;
+    color: white;
+}
+.p4{
+    font-family: 'Rubik Distressed', cursive;
+    font-size: 30px;
+    color: white;
+}
+.li li ::marker{
+    color: white;
+    font-size: 30px;
+}
+ul {
+  list-style: cjk-decimal;
+}
+@counter-style circled-digits {
+  system: fixed;
+  symbols: 😀 👻 👽 👾 🤖 🎃 😹 👋 👀 💋;
+  suffix: " ";
+}
+
+ul {
+  list-style: circled-digits;
+}
+
