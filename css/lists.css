@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter&family=Pacifico&family=Rubik+Bubbles&family=Rubik+Burned&family=Rubik+Distressed&display=swap');
+body{
+    background-color: lightgreen;
+}
+p{
+    font-size: 48px;
+    font-family: "Rubik Bubbles", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  color: orange;
+}
+ul,ol,dl{
+    font-size: 24px;
+    color: red;
+      font-family: "Comforter", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.l1 li::marker{
+    color: black;
+}
+.l2 li{
+    padding-left: 16px;
+}
+Ol{
+    margin-left: 80px;
+}
+@counter-style emoji {
+  system: cyclic;
+  symbols: 😀 👻 🎃 😹 👋 👀 🦕;
+  suffix: " ";
+}
+
+ul.l3 {
+  list-style: emoji;
+}
+
+@counter-style lower-ukrainian-full {
+system: alphabetic;
+symbols: '\430' '\431' '\432' '\433' '\491' '\434' '\435' '\454' '\436' '\437' '\438' '\456' '\457' '\439' '\43A' '\43B' '\43C' '\43D' '\43E' '\43F' '\440' '\441' '\442' '\443' '\444' '\445' '\446' '\447' '\448' '\449' '\44C' '\44E' '\44F';
+/* symbols: 'а' 'б' 'в' 'г' 'ґ' 'д' 'е' 'є' 'ж' 'з' 'и' 'і' 'ї' 'й' 'к' 'л' 'м' 'н' 'о' 'п' 'р' 'с' 'т' 'у' 'ф' 'х' 'ц' 'ч' 'ш' 'щ' 'ь' 'ю' 'я'; */
+prefix: '(';
+suffix: ') ';
+}
+.l4{
+    list-style: lower-ukrainian-full;
+}
+dl{
+    color: black;
+}
