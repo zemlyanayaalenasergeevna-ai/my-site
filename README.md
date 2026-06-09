@@ -1,3 +1,4 @@
+<img width="3000" height="3000" alt="ezomocchi2-triangle-7894202" src="https://github.com/user-attachments/assets/93cbc292-8a63-4a0f-9b7e-7bd68f82eefc" />
 <img width="1912" height="1920" alt="clker-free-vector-images-circle-38648_1920" src="https://github.com/user-attachments/assets/1f8e562d-6cf8-4c26-8197-6d4f28889341" />
 <img width="300" height="100" alt="u_fg0tkeqgiy-ruby-red-7290502" src="https://github.com/user-attachments/assets/c419939c-dae9-4af8-9099-93299494e4b2" />
 
